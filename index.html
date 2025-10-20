@@ -5,22 +5,26 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Мебель вне времени</title>
-  <link rel="stylesheet" href=" https://use.fontawesome.com/releases/v6.4.4/css/all.css">
+
   <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href=" https://use.fontawesome.com/releases/v6.4.4/css/all.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
   <link rel="stylesheet" href="./assets/css/style.css">
 
-  <!-- Swiper JS -->
-  <script defer src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
-  <script defer src="./assets/js/swiper.js"></script>
-  <script defer src="./assets/js/menu.js"></script>
 </head>
 
 <body class="body" id="body">
 
   <header class="header">
+
+    <video class="video" autoplay muted>
+      <source src="./assets/video/video-m-family.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+
     <div class="container">
-      <nav class="nav">
+      <nav data-aos="fade-down" class="nav">
         <div class="nav-logo">
           <a href="/"><img src="./assets/img/logo.svg" alt="Logo" class="header-logo"></a>
         </div>
@@ -33,8 +37,8 @@
         </div>
       </nav>
       <div class="header-main">
-        <div class="header-title">Мебель <br> вне времени</div>
-        <div class="header-desc">
+        <div data-aos="fade-right" data-aos-delay="200" class="header-title">Мебель <br> вне времени</div>
+        <div data-aos="fade-right" data-aos-delay="400" class="header-desc">
           Разрабатываем изделия с вневременным и персонализированным дизайном,
           который свободно адаптируется к различным стилистическим решениям
           домов и квартир.
@@ -45,7 +49,7 @@
 
   <section class="text">
     <div class="container">
-      <div class="text-text">
+      <div data-aos="fade-right" class="text-text">
         То, с чем мы решаем жить, — это
         <span class="bold-texts">гораздо больше, чем просто предмет мебели.</span> <br>
         <span class="bold-texts">Это наш спутник</span> в путешествии: оказавшись в
@@ -65,7 +69,7 @@
   <section class="project-home">
     <div class="container">
       <div class="project-home__body">
-        <div class="project-home__title">
+        <a href="" data-aos="fade-down" class="project-home__title">
           <div class="project-home__title-icon">
             <div class="project-home__title-icon-body">
               <img src="assets/img/icon/arrow-project-opacity-0.5.svg" alt="arrow">
@@ -75,10 +79,10 @@
           <div class="project-home__title-text">
             Все проекты
           </div>
-        </div>
+        </a>
         <div class="project-home__row swiper">
           <div class="swiper-wrapper">
-            <div class="project-home__column swiper-slide">
+            <div data-aos="fade-down" data-aos-delay="100" class="project-home__column swiper-slide">
               <a href="" class="project-home__column-body">
                 <div class="project-home__column-img">
                   <img src="assets/img/other/home/project-1.jpg" alt="project">
@@ -112,7 +116,7 @@
                 </div>
               </a>
             </div>
-            <div class="project-home__column swiper-slide">
+            <div data-aos="fade-down" data-aos-delay="200" class="project-home__column swiper-slide">
               <a href="" class="project-home__column-body">
                 <div class="project-home__column-img">
                   <img src="assets/img/other/home/project-2.jpg" alt="project">
@@ -140,7 +144,7 @@
                 </div>
               </a>
             </div>
-            <div class="project-home__column swiper-slide">
+            <div data-aos="fade-down" data-aos-delay="300" class="project-home__column swiper-slide">
               <a href="" class="project-home__column-body">
                 <div class="project-home__column-img">
                   <img src="assets/img/other/home/project-1.jpg" alt="project">
@@ -174,7 +178,7 @@
                 </div>
               </a>
             </div>
-            <div class="project-home__column swiper-slide">
+            <div data-aos="fade-down" data-aos-delay="400" class="project-home__column swiper-slide">
               <a href="" class="project-home__column-body">
                 <div class="project-home__column-img">
                   <img src="assets/img/other/home/project-2.jpg" alt="project">
@@ -209,7 +213,7 @@
   </section>
 
   <section class="photo">
-    <div class="container">
+    <div data-aos="fade-up" class="container">
       <img class="photo-desktop" src="./assets/img/photo.png" alt="">
       <img class="photo-320" src="./assets/img/photo-320.png" alt="">
     </div>
@@ -219,16 +223,19 @@
     <div class="container">
       <div class="product-home__body">
         <div class="product-home__content">
-          <div class="product-home__content-title">
-            <div class="product-home__content-title-icon">
-              <img src="assets/img/icon/arrow-project.svg" alt="arrow">
+          <a data-aos="fade-right" href="" class="project-home__title">
+            <div class="project-home__title-icon">
+              <div class="project-home__title-icon-body">
+                <img src="assets/img/icon/arrow-project-opacity-0.5.svg" alt="arrow">
+                <img src="assets/img/icon/arrow-project.svg" alt="arrow">
+              </div>
             </div>
-            <div class="product-home__content-title-text">
+            <div class="project-home__title-text">
               Все продукты
             </div>
-          </div>
+          </a>
           <div class="product-home__content-content">
-            <div class="produc-home__contnet-contnet-text">
+            <div data-aos="fade-down" class="produc-home__contnet-contnet-text">
               <p>
                 Создаем новые предметы мебели с балансом между простой функцией и тем, что сердце видит как красоту и
                 страсть. От эскизов и технической документации до безупречного монтажа — с инженерной точностью,
@@ -242,7 +249,7 @@
         </div>
         <div class="product-home__row swiper">
           <div class="swiper-wrapper">
-            <div class="product-home__column swiper-slide">
+            <div data-aos="fade-down" data-aos-delay="100" class="product-home__column swiper-slide">
               <a href="" class="product-home__column-body">
                 <div class="product-home__column-img">
                   <img src="assets/img/other/home/product-1.jpg" alt="product">
@@ -257,7 +264,7 @@
                 </div>
               </a>
             </div>
-            <div class="product-home__column swiper-slide">
+            <div data-aos="fade-down" data-aos-delay="200" class="product-home__column swiper-slide">
               <a href="" class="product-home__column-body">
                 <div class="product-home__column-img">
                   <img src="assets/img/other/home/product-2.jpg" alt="product">
@@ -272,7 +279,7 @@
                 </div>
               </a>
             </div>
-            <div class="product-home__column swiper-slide">
+            <div data-aos="fade-down" data-aos-delay="300" class="product-home__column swiper-slide">
               <a href="" class="product-home__column-body">
                 <div class="product-home__column-img">
                   <img src="assets/img/other/home/product-3.jpg" alt="product">
@@ -287,7 +294,7 @@
                 </div>
               </a>
             </div>
-            <div class="product-home__column swiper-slide">
+            <div data-aos="fade-down" data-aos-delay="400" class="product-home__column swiper-slide">
               <a href="" class="product-home__column-body">
                 <div class="product-home__column-img">
                   <img src="assets/img/other/home/product-1.jpg" alt="product">
@@ -302,7 +309,7 @@
                 </div>
               </a>
             </div>
-            <div class="product-home__column swiper-slide">
+            <div data-aos="fade-down" data-aos-delay="500" class="product-home__column swiper-slide">
               <a href="" class="product-home__column-body">
                 <div class="product-home__column-img">
                   <img src="assets/img/other/home/product-2.jpg" alt="product">
@@ -326,15 +333,15 @@
   <section class="feedback">
     <div class="container">
       <div class="feedback-head">
-        <h4 class="feedback-title">
+        <h4 data-aos="fade-right" class="feedback-title">
           Ваш проект начинается с одного шага — заявки
         </h4>
-        <p class="feedback-subtitle">
+        <p data-aos="fade-down" class="feedback-subtitle">
           Подробно обсудим задачу, предложим варианты реализации и подберём
           материалы и решения, идеально подходящие именно вам.
         </p>
       </div>
-      <form action="#" class="feedback-form">
+      <form data-aos="fade-up" action="#" class="feedback-form">
         <input class="text-field__input" type="text" placeholder="Имя">
         <input type="text" placeholder="Телефон">
         <button type="button" class="feedback-btn">Отправить</button>
@@ -344,32 +351,32 @@
 
   <section class="full">
     <div class="container">
-      <h2 class="full-title">Полный цикл производства</h2>
+      <h2 data-aos="fade-down" class="full-title">Полный цикл производства</h2>
     </div>
     <hr>
     <div class="container">
       <div class="full-boxes">
-        <div class="full-box">
+        <div data-aos="fade-down" data-aos-delay="100" class="full-box">
           <img src="./assets/img/vertical-line.svg" alt="">
           <h6 class="full-box-title">Концепт</h6>
           <p class="full-box-subtitle">Проработаем ваш проект детально с учетом
             вашего
             дизайн-проекта, привычек и образа жизни.</p>
         </div>
-        <div class="full-box">
+        <div data-aos="fade-down" data-aos-delay="200" class="full-box">
           <img src="./assets/img/vertical-line.svg" alt="">
           <h6 class="full-box-title">Инженерная работа</h6>
           <p class="full-box-subtitle">Компания со штатом 120+ человек
             проектирует и производит мебель, сопровождает проекты
             технической информацией</p>
         </div>
-        <div class="full-box">
+        <div data-aos="fade-down" data-aos-delay="300" class="full-box">
           <img src="./assets/img/vertical-line.svg" alt="">
           <h6 class="full-box-title">Процесс производства</h6>
           <p class="full-box-subtitle">Увидите все этапы создания мебели и лично
             поучаствуете в выборе рубашки шпона.</p>
         </div>
-        <div class="full-box">
+        <div data-aos="fade-down" data-aos-delay="400" class="full-box">
           <img src="./assets/img/vertical-line.svg" alt="">
           <h6 class="full-box-title">Комплектация</h6>
           <p class="full-box-subtitle">Создадим для вас мебель с нужным
@@ -383,14 +390,14 @@
   <section class="about">
     <div class="container">
       <div class="about-boxes">
-        <div class="about-box">
+        <div data-aos="fade-right" class="about-box">
           <div class="about-box-contents">
             <img src="./assets/img/logo-m-dark.svg" alt="">
             <h2 class="about-box-contents-title">M-Family — мебель,
               которая знает ваш образ жизни</h2>
           </div>
         </div>
-        <div class="about-box about-box-grid">
+        <div data-aos="fade-down" class="about-box about-box-grid">
           <div class="about-box-texts about-box-texts-1">
             <div class="about-box-texts-title">продуманный образ жизни
             </div>
@@ -428,7 +435,7 @@
           </div>
         </div>
       </div>
-      <div class="about-footer">
+      <div data-aos="fade-up" class="about-footer">
         <div class="about-footer-content">
           <h4 class="about-footer-content-title">
             24 года экспертизы в производстве премиальной мебели
@@ -451,7 +458,7 @@
           </p>
         </div>
       </div>
-      <a href="#" class="btn-more-details">
+      <a data-aos="fade-up" href="#" class="btn-more-details">
         <img src="./assets/img/line-dark.svg" alt="">
         <p>Подробнее</p>
       </a>
@@ -461,17 +468,18 @@
   <section class="instagram-home">
     <div class="container">
       <div class="instagram-home__body">
-        <div class="instagram-home__title">
+        <a data-aos="fade-down" href="https://www.instagram.com/mfamily.by/" target="_blank"
+          class="instagram-home__title">
           <div class="instagram-home__title-icon">
             <img src="assets/img/icon/arrow-project.svg" alt="arrow">
           </div>
           <div class="instagram-home__title-text">
-            Наш Instagram - <a href="https://www.instagram.com/mfamily.by/" target="_blank">@mfamily.by</a>
+            Наш Instagram - @mfamily.by
           </div>
-        </div>
+        </a>
         <div class="instagram-home__row swiper">
           <div class="swiper-wrapper">
-            <div class="instagram-home__column swiper-slide">
+            <div data-aos="fade-down" data-aos-delay="100" class="instagram-home__column swiper-slide">
               <a href="" target="_blank" class="instagram-home__column-body">
                 <div class="instagram-home__column-img">
                   <img src="assets/img/other/home/instagram-1.jpg" alt="instagram">
@@ -481,7 +489,7 @@
                 </div>
               </a>
             </div>
-            <div class="instagram-home__column swiper-slide">
+            <div data-aos="fade-down" data-aos-delay="200" class="instagram-home__column swiper-slide">
               <a href="" target="_blank" class="instagram-home__column-body">
                 <div class="instagram-home__column-img">
                   <img src="assets/img/other/home/instagram-2.jpg" alt="instagram">
@@ -491,7 +499,7 @@
                 </div>
               </a>
             </div>
-            <div class="instagram-home__column swiper-slide">
+            <div data-aos="fade-down" data-aos-delay="300" class="instagram-home__column swiper-slide">
               <a href="" target="_blank" class="instagram-home__column-body">
                 <div class="instagram-home__column-img">
                   <img src="assets/img/other/home/instagram-3.jpg" alt="instagram">
@@ -501,7 +509,7 @@
                 </div>
               </a>
             </div>
-            <div class="instagram-home__column swiper-slide">
+            <div data-aos="fade-down" data-aos-delay="400" class="instagram-home__column swiper-slide">
               <a href="" target="_blank" class="instagram-home__column-body">
                 <div class="instagram-home__column-img">
                   <img src="assets/img/other/home/instagram-4.jpg" alt="instagram">
@@ -511,7 +519,7 @@
                 </div>
               </a>
             </div>
-            <div class="instagram-home__column swiper-slide">
+            <div data-aos="fade-down" data-aos-delay="500" class="instagram-home__column swiper-slide">
               <a href="" target="_blank" class="instagram-home__column-body">
                 <div class="instagram-home__column-img">
                   <img src="assets/img/other/home/instagram-5.jpg" alt="instagram">
@@ -521,7 +529,7 @@
                 </div>
               </a>
             </div>
-            <div class="instagram-home__column swiper-slide">
+            <div data-aos="fade-down" data-aos-delay="600" class="instagram-home__column swiper-slide">
               <a href="" target="_blank" class="instagram-home__column-body">
                 <div class="instagram-home__column-img">
                   <img src="assets/img/other/home/instagram-1.jpg" alt="instagram">
@@ -531,7 +539,7 @@
                 </div>
               </a>
             </div>
-            <div class="instagram-home__column swiper-slide">
+            <div data-aos="fade-down" data-aos-delay="700" class="instagram-home__column swiper-slide">
               <a href="" target="_blank" class="instagram-home__column-body">
                 <div class="instagram-home__column-img">
                   <img src="assets/img/other/home/instagram-2.jpg" alt="instagram">
@@ -541,7 +549,7 @@
                 </div>
               </a>
             </div>
-            <div class="instagram-home__column swiper-slide">
+            <div data-aos="fade-down" data-aos-delay="800" class="instagram-home__column swiper-slide">
               <a href="" target="_blank" class="instagram-home__column-body">
                 <div class="instagram-home__column-img">
                   <img src="assets/img/other/home/instagram-3.jpg" alt="instagram">
@@ -551,7 +559,7 @@
                 </div>
               </a>
             </div>
-            <div class="instagram-home__column swiper-slide">
+            <div data-aos="fade-down" data-aos-delay="100" class="instagram-home__column swiper-slide">
               <a href="" target="_blank" class="instagram-home__column-body">
                 <div class="instagram-home__column-img">
                   <img src="assets/img/other/home/instagram-4.jpg" alt="instagram">
@@ -561,7 +569,7 @@
                 </div>
               </a>
             </div>
-            <div class="instagram-home__column swiper-slide">
+            <div data-aos="fade-down" class="instagram-home__column swiper-slide">
               <a href="" target="_blank" class="instagram-home__column-body">
                 <div class="instagram-home__column-img">
                   <img src="assets/img/other/home/instagram-5.jpg" alt="instagram">
@@ -578,7 +586,7 @@
   </section>
 
   <section class="summary">
-    <div class="container">
+    <div data-aos="fade-down" class="container">
       <div class="summary-boxes">
         <div class="summary-box">
           <div class="summary-box-content">
@@ -620,7 +628,7 @@
     </div>
   </section>
 
-  <footer class="footer">
+  <footer data-aos="fade-up" class="footer">
     <div class="container">
       <div class="footer-head">
         <img src="./assets/img/logo.svg" alt="">
@@ -841,6 +849,17 @@
       </div>
     </div>
   </nav>
+
+  <!-- Swiper JS -->
+  <script src="./assets/js/library/jQuery/jQuery-3.7.1.min.js"></script>
+  <script src="./assets/js/library/jQuery/jquery.maskedinput.js"></script>
+  <script src="./assets/js/library/twentytwenty/jquery.twentytwenty.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+  <script src="./assets/js/library/aos/aos.js"></script>
+  <script defer src="./assets/js/aos.js"></script>
+  <script defer src="./assets/js/swiper.js"></script>
+  <script defer src="./assets/js/menu.js"></script>
 
 </body>
 
