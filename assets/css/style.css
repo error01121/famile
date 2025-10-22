@@ -1007,6 +1007,27 @@ hr {
 .video {
   z-index: -2;
 }
+@media(max-width: 500px) {
+  .nav {
+    padding: 40px 0px 0px;
+  }
+  .nav-menu {
+    display: flex;
+    align-items: center;
+  }
+  .nav-menu-link {
+    margin: 0px 20px 0px 0px;
+    display: inline-block;
+    font-size: 14px;
+  }
+  .nav-menu-search {
+    margin: 0px 15px 0px 0px;
+    display: inline-block;
+  }
+  .nav-menu-menu {
+    display: inline-block;
+  }
+}
 /* ========================================================================================== */
 
 /* ========================================================================================== */
@@ -1237,6 +1258,12 @@ hr {
 /* ========================================================================================== */
 
 /* ========================================================================================== */
+.photo .container {
+  position: relative;
+}
+.photo .video {
+  position: relative;
+}
 @media(max-width: 770px) {
   .photo {
     padding: 0px 22px;
@@ -1460,16 +1487,145 @@ hr {
   .full {
     overflow-x: scroll;
   }
+  .full hr {
+    min-width: 1000px;
+  }
   .full .container {
     min-width: 1000px;
+  }
+}
+@media(max-width: 500px) {
+  .full {
+    padding: 60px 0px;
+    overflow-x: hidden;
+  }
+  .full hr {
+    display: none;
+  }
+  .full .container {
+    min-width: auto;
+  }
+  .full .container:nth-child(1) {
+    display: none;
+  }
+  .full-boxes {
+    gap: 0;
+    flex-direction: column;
+  }
+  .full-box {
+    padding: 0px 0px 40px 20px;
+    max-width: 100%;
+    border-left: 2px solid #666666;
+    position: relative;
+  }
+  .full-box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateX(-4px);
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #666666;
+  }
+  .full-box:last-child {
+    padding: 0px 0px 0px 20px;
+    border-left: 0px solid #666666;
+  }
+  .full-box:last-child::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2px;
+    height: 15px;
+    background: #666666;
+  }
+  .full-box:last-child::before {
+    top: 15px;
+    left: 2px;
+  }
+  .full-box::before {}
+  .full-box img {
+    display: none;
+  }
+  .full-box-title {
+    margin-top: 0;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .full-box-subtitle {
+    font-size: 14px;
+    line-height: 20px;
   }
 }
 /* ========================================================================================== */
 
 /* ========================================================================================== */
-@media(max-width: 500px) {
-  .about .container {
+@media(max-width: 770px) {
+  .about {
+    margin: 110px 0px;
     padding: 0px 22px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .about .container {
+    margin: 0px 30px;
+    padding: 0;
+    max-width: 580px;
+    width: 100%;
+  }
+}
+@media(max-width: 500px) {
+  .about {
+    margin: 110px 0px;
+  }
+  .about-boxes {
+    gap: 0;
+  }
+  .about-box-contents {
+    gap: 30px;
+    display: flex;
+  }
+  .about-box-contents img {
+    max-width: 41px;
+    min-width: 41px;
+  }
+  .about-box-contents-title {
+    max-width: 100%;
+    width: 100%;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .about-box {
+    margin-top: 50px;
+  }
+  .about-box {
+    gap: 20px;
+    grid-template: repeat(1, 1fr) / repeat(1, 1fr);
+  }
+  .about-box-texts {
+    margin-bottom: 0px;
+  }
+  .about-box-texts-title {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .about-footer {
+    margin-top: 60px;
+  }
+  .about-footer-content-title {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .about-footer-content-subtitle {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .btn-more-details {
+    display: none;
   }
 }
 /* ========================================================================================== */
@@ -1613,9 +1769,33 @@ hr {
 /* ========================================================================================== */
 
 /* ========================================================================================== */
-@media(max-width: 500px) {
-  .summary .container {
+@media(max-width: 770px) {
+  .summary {
+    margin: 0px 0px 90px;
     padding: 0px 22px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .summary .container {
+    margin: 0px 30px;
+    padding: 0;
+    max-width: 580px;
+    width: 100%;
+  }
+}
+@media(max-width: 500px) {
+  .summary-boxes {
+    gap: 40px;
+  }
+  .summary-box-title {
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .summary-box-subtitle {
+    font-size: 14px;
+    line-height: 20px;
   }
 }
 /* ========================================================================================== */
@@ -1624,9 +1804,88 @@ hr {
 .footer {
   overflow: hidden;
 }
-@media(max-width: 500px) {
-  .footer .container {
-    padding: 0px 22px;
+.footer-footer {
+  gap: 20px;
+}
+.main-footer__content {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+}
+.main-footer__content-politicy {
+  margin: 0px 0px 10px;
+  width: 100%;
+  gap: 5px;
+  display: flex;
+  flex-direction: column;
+}
+.main-footer__content-politicy-link {
+  font-size: 12px;
+  line-height: 18px;
+  color: #fff;
+}
+.main-footer__content-politicy-line {
+  display: none;
+  width: 2px;
+  height: 15px;
+  background: #A3A1A1;
+}
+.main-footer__content-text {
+  font-size: 14px;
+  line-height: 20px;
+  color: #FFFFFF80;
+}
+@media(max-width: 770px) {
+  .footer {
+    padding: 50px 22px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
+  .footer .container {
+    margin: 0;
+    padding: 0;
+    max-width: 580px;
+    width: 100%;
+  }
+  .footer-footer {
+    margin: 0px 0px 20px;
+  }
+}
+@media(max-width: 600px) {
+  .footer-head {
+    margin: 0px 0px 50px;
+  }
+  .footer-line {
+    display: none;
+  }
+  .footer-links {
+    display: none;
+  }
+  .footer-footer {
+    display: flex;
+    justify-content: center;
+  }
+  .footer-footer-text {
+    display: none;
+  }
+  .footer-footer-contacts {
+    gap: 20px;
+  }
+  .footer-footer-contacts p {
+    order: 2;
+  }
+  .footer-footer-contacts-text {
+    order: 3;
+  }
+  .footer-footer-socials {
+    order: 1;
+    gap: 15px;
+  }
+  .main-footer__content {
+    display: flex;
+  }
+}
+@media(max-width: 500px) {
 }
 /* ========================================================================================== */
